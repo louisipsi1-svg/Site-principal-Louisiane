@@ -17,12 +17,22 @@ const HomePage: React.FC = () => {
               Um olhar atento para quem sustenta o mundo. Louisiane Aurora une a inteligência da Psicologia Organizacional à sensibilidade da Clínica, oferecendo um espaço de suporte genuíno e técnico para organizações e mulheres que buscam recuperar sua essência e seu equilíbrio.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <div className="border border-primary text-primary px-8 py-4 rounded-full font-medium bg-white/50 backdrop-blur-sm select-none">
+              <a
+                href="https://wa.me/35910016852?text=Olá,%20Louisiane!%20Gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20para%20pessoas."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-primary text-primary px-8 py-4 rounded-full font-medium bg-white/50 backdrop-blur-sm hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105 text-center"
+              >
                 Para Pessoas
-              </div>
-              <div className="border border-primary text-primary px-8 py-4 rounded-full font-medium bg-white/50 backdrop-blur-sm select-none">
+              </a>
+              <a
+                href="https://wa.me/35910016852?text=Olá,%20Louisiane!%20Gostaria%20de%20saber%20mais%20sobre%20a%20consultoria%20para%20empresas."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-primary text-primary px-8 py-4 rounded-full font-medium bg-white/50 backdrop-blur-sm hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105 text-center"
+              >
                 Para Empresas
-              </div>
+              </a>
             </div>
           </div>
 
