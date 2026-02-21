@@ -95,7 +95,7 @@ const QuemSouPage: React.FC = () => {
 
           {/* Placeholder for Logos - Grayscale for clean aesthetic */}
           <div className="flex flex-wrap justify-center gap-12 md:gap-20 items-center transition-all duration-500">
-            {corporateLogos.map((logo, i) => (
+            {logoIcons.map((logo, i) => (
               <div key={i} className="h-40 w-64 flex items-center justify-center p-2">
                 <img
                   src={logo}
