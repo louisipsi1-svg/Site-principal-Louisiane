@@ -69,7 +69,7 @@ const CarreiraPage: React.FC = () => {
                     <div className="order-1 md:order-2 relative flex justify-center">
                         <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[480px] lg:h-[480px]">
                             <img
-                                src="/b5.png"
+                                src="b5.png"
                                 alt="Louisiane Aurora - Consultoria de Carreira"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />

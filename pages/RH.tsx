@@ -54,7 +54,7 @@ const RHPage: React.FC = () => {
           </div>
           <div className="md:w-1/2 relative">
             <img
-              src="/louisi2.jpg"
+              src="louisi2.jpg"
               alt="Louisiane Aurora no ambiente corporativo"
               className="rounded-2xl shadow-2xl object-cover h-[500px] w-full brightness-[1.02]"
             />
