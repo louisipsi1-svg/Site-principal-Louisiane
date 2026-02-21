@@ -100,7 +100,7 @@ const SaudeMentalPage: React.FC = () => {
           <div className="relative">
             <div className="bg-secondary/5 p-1 rounded-2xl border border-white/10">
               <img
-                src="louisi3.JPG"
+                src="/louisi3.jpg"
                 alt="Saúde Mental Corporativa"
                 className="rounded-xl shadow-2xl transition-all duration-700"
               />

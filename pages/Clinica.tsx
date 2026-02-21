@@ -50,7 +50,7 @@ const ClinicaPage: React.FC = () => {
             <div className="absolute -inset-4 bg-primary/5 rounded-[2rem] blur-2xl -z-10 animate-pulse"></div>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20">
               <img
-                src="louisi4.JPG"
+                src="/louisi4.jpg"
                 alt="Louisiane Aurora - Terapia Cognitivo-Comportamental"
                 className="object-cover h-[550px] w-full brightness-[1.03] contrast-[1.05]"
                 onError={(e) => {

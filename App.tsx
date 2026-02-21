@@ -59,7 +59,7 @@ const App: React.FC = () => {
             >
               <div className="relative">
                 <div className="w-10 h-10 flex items-center justify-center p-1 group-hover:scale-105 transition-all overflow-hidden rounded-full border border-primary/5">
-                  <img src="logo.png" alt="Logo Louisiane Aurora" className="w-full h-full object-contain mix-blend-multiply" onError={(e) => {
+                  <img src="/logo.png" alt="Logo Louisiane Aurora" className="w-full h-full object-contain mix-blend-multiply" onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
                     if (target.parentElement) target.parentElement.innerText = 'L';
@@ -151,7 +151,7 @@ const App: React.FC = () => {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 flex items-center justify-center overflow-hidden">
-                  <img src="logo principal branco.png" alt="Logo Louisiane Aurora" className="w-full h-full object-contain" />
+                  <img src="/logo-principal-branco.png" alt="Logo Louisiane Aurora" className="w-full h-full object-contain" />
                 </div>
                 <div className="ml-4">
                   <h3 className="text-2xl font-serif font-bold text-white">Louisiane Aurora Psicologia & RH</h3>
@@ -200,7 +200,7 @@ const App: React.FC = () => {
             </div>
 
             <div className="flex flex-col items-center md:items-start">
-              <img src="logo principal branco.png" alt="Louisiane Aurora Logo" className="w-56 h-auto transition-opacity" />
+              <img src="/logo-principal-branco.png" alt="Louisiane Aurora Logo" className="w-56 h-auto transition-opacity" />
             </div>
           </div>
 

@@ -4,13 +4,13 @@ import React from 'react';
 import { BookOpen, GraduationCap, Heart, Building2, CheckCircle2, Quote, ArrowRight } from 'lucide-react';
 
 const QuemSouPage: React.FC = () => {
-  const corporateLogos = [
-    "LOGO 1.png",
-    "LOGO 2.png",
-    "LOGO3.png",
-    "LOGO 4.png",
-    "LOGO 5.png",
-    "LOGO 6.jpg"
+  const logoIcons = [
+    "/logo1.png",
+    "/logo2.png",
+    "/logo3.png",
+    "/logo4.png",
+    "/logo5.png",
+    "/logo6.jpg"
   ];
 
   return (
@@ -22,7 +22,7 @@ const QuemSouPage: React.FC = () => {
           <div className="md:w-1/2 relative">
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
             <img
-              src="louisi1.JPG"
+              src="/louisi1.jpg"
               alt="Louisiane Aurora - Psicóloga"
               className="rounded-3xl shadow-2xl transition-all duration-700 w-full object-cover aspect-[4/5]"
               onError={(e) => {

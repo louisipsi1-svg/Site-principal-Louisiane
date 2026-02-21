@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
 
             <div className="relative group">
               <img
-                src="louisi-photo.jpg"
+                src="/louisi-photo.jpg"
                 alt="Louisiane Aurora - Inteligência e Estratégia"
                 className="rounded-3xl shadow-2xl object-cover h-[500px] w-full max-w-lg transition-all duration-700 hover:scale-[1.02]"
                 onError={(e) => {
