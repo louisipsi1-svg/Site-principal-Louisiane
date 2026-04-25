@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Compass, UserCheck, BarChart, Target, ArrowRight, Briefcase, GraduationCap, Microscope } from 'lucide-react';
+import { Compass, UserCheck, BarChart, Target, ArrowRight, Briefcase, GraduationCap, Microscope, Linkedin } from 'lucide-react';
 
 const CarreiraPage: React.FC = () => {
     const careerMoments = [
@@ -64,6 +64,14 @@ const CarreiraPage: React.FC = () => {
                             >
                                 Agendar Análise de Perfil <ArrowRight size={18} className="ml-3 group-hover:translate-x-1 transition-transform" />
                             </a>
+                            <a
+                                href="https://www.linkedin.com/in/louisiane-aurora-0a6514b6/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white text-dark border border-dark/10 px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:border-dark/30 hover:bg-dark/5 transition-all flex items-center justify-center shadow-lg group"
+                            >
+                                Meu LinkedIn <Linkedin className="ml-3 group-hover:scale-110 transition-transform" size={18} />
+                            </a>
                         </div>
                     </div>
                     <div className="order-1 md:order-2 relative flex justify-center">
@@ -100,10 +108,10 @@ const CarreiraPage: React.FC = () => {
 
                 {/* Methodology Section */}
                 <section className="mb-32">
-                    <div className="text-center max-w-2xl mx-auto mb-20">
-                        <h2 className="text-3xl md:text-4xl font-serif text-dark mb-6">Análise Avançada de Personalidade</h2>
+                    <div className="text-center max-w-3xl mx-auto mb-20">
+                        <h2 className="text-3xl md:text-4xl font-serif text-dark mb-6">Análise Multidimensional de Personalidade</h2>
                         <p className="text-dark/60 italic text-sm leading-relaxed">
-                            Só quem se conhece pode aproveitar todo o seu potencial.
+                            Mais do que um simples teste, um mapeamento profundo das suas múltiplas dimensões. Só quem conhece a própria essência pode aproveitá-la ao máximo.
                         </p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-10">
@@ -124,9 +132,9 @@ const CarreiraPage: React.FC = () => {
                     <div className="relative z-10 grid md:grid-cols-2 gap-20 items-center">
                         <div>
                             <div className="w-12 h-1 bg-primary mb-8"></div>
-                            <h2 className="text-4xl font-serif mb-8 italic leading-tight">Análise de Personalidade <br /> <span className="text-primary not-italic">Modelo Big Five.</span></h2>
+                            <h2 className="text-4xl font-serif mb-8 italic leading-tight">Mapeamento Multidimensional <br /> <span className="text-primary not-italic">Modelo Big Five.</span></h2>
                             <p className="text-secondary/70 text-lg mb-10 leading-relaxed italic">
-                                O inventário de personalidade mais validado do mundo para trazer dados concretos sobre sua forma de interagir, organizar e decidir.
+                                O inventário de personalidade mais validado cientificamente no mundo. Uma ferramenta essencial para mapear as múltiplas dimensões do seu comportamento, estilo de organização e tomada de decisão.
                             </p>
                             <div className="space-y-6">
                                 {[

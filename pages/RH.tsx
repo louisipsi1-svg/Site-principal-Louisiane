@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Linkedin, Instagram } from 'lucide-react';
 
 const RHPage: React.FC = () => {
   const services = [

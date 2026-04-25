@@ -1,22 +1,25 @@
 
 import React from 'react';
-import { Sparkles, Brain, Heart, Calendar, ArrowRight, BookOpen, Search } from 'lucide-react';
+import { Sparkles, Brain, Heart, Calendar, ArrowRight, BookOpen, Search, Instagram } from 'lucide-react';
 
 const ClinicaPage: React.FC = () => {
   const archetypes = [
     {
       title: "A Boazinha",
-      description: "Dificuldade crônica em dizer \"não\", priorizando sempre a necessidade alheia em detrimento da própria saúde mental.",
+      tag: "Apego Ansioso",
+      description: "Dificuldade crônica em dizer \"não\", buscando segurança e afeto através da anulação de si mesma e do agradar constante.",
       icon: <Heart className="text-primary" size={24} />
     },
     {
       title: "A Perfeccionista",
-      description: "A busca implacável por um padrão inalcançável, resultando em procrastinação defensiva e esgotamento.",
+      tag: "Apego Evitante",
+      description: "A busca implacável por um padrão inalcançável, usando o alto desempenho e controle como escudo contra a vulnerabilidade.",
       icon: <Sparkles className="text-primary" size={24} />
     },
     {
       title: "A Sem Limites",
-      description: "A exaustão de quem não consegue separar a própria vida das demandas externas, perdendo-se de si mesma.",
+      tag: "Desregulação Emocional",
+      description: "A exaustão de quem não consegue estabelecer fronteiras, fundindo-se com as demandas do outro às custas de si.",
       icon: <Brain className="text-primary" size={24} />
     }
   ];
@@ -27,7 +30,7 @@ const ClinicaPage: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
           <div className="order-2 md:order-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold tracking-widest uppercase mb-6">
-              <Brain size={12} /> Clínica de Alta Assertividade
+              <Brain size={12} /> Seja fiel a si mesma
             </div>
             <h1 className="text-4xl md:text-6xl font-serif text-dark mb-8 leading-tight">
               Para a mulher que se perdeu na tentativa de ser <span className="italic">tudo para todos.</span>
@@ -43,6 +46,14 @@ const ClinicaPage: React.FC = () => {
                 className="bg-primary text-white px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:bg-primary/90 transition-all flex items-center justify-center shadow-2xl shadow-primary/30 group"
               >
                 Agendar Triagem Técnica <Calendar className="ml-3 group-hover:rotate-12 transition-transform" size={18} />
+              </a>
+              <a
+                href="https://www.instagram.com/louisi.aurora/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-primary border border-primary/10 px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:border-primary/30 hover:bg-primary/5 transition-all flex items-center justify-center shadow-lg group"
+              >
+                Instagram da Clínica <Instagram className="ml-3 group-hover:scale-110 transition-transform" size={18} />
               </a>
             </div>
           </div>
@@ -74,10 +85,13 @@ const ClinicaPage: React.FC = () => {
 
         {/* Archetypes Section */}
         <section className="mb-32">
-          <div className="text-center max-w-2xl mx-auto mb-20">
-            <h2 className="text-3xl md:text-4xl font-serif text-dark mb-6">Mapeamento de Padrões</h2>
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h2 className="text-3xl md:text-4xl font-serif text-dark mb-6">A Raiz do Esgotamento</h2>
+            <p className="text-dark/70 text-lg leading-relaxed mb-6">
+              Segundo a <span className="font-bold text-primary">Teoria do Apego</span>, os padrões que drenam sua energia frequentemente nascem de estratégias de sobrevivência emocional. O primeiro passo da estratégia clínica é identificar sob qual arquétipo você está operando.
+            </p>
             <p className="text-dark/60 italic text-sm leading-relaxed">
-              O primeiro passo da estratégia clínica é identificar os arquétipos que drenam sua energia. <br /> Onde você está gastando sua força vital hoje?
+              O objetivo terapêutico não é rotular você, mas sim construir ferramentas de <span className="font-bold">Regulação Emocional</span> para que você possa migrar desses padrões defensivos para o cultivo de <span className="font-bold text-primary">Vínculos Saudáveis</span>, onde se pode pertencer a uma relação sem deixar de pertencer a si mesma.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-10">
@@ -89,7 +103,10 @@ const ClinicaPage: React.FC = () => {
                 <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-secondary/50 mb-8 group-hover:bg-primary/10 transition-colors">
                   {arc.icon}
                 </div>
-                <h3 className="text-2xl font-serif text-dark mb-6">{arc.title}</h3>
+                <h3 className="text-2xl font-serif text-dark mb-2">{arc.title}</h3>
+                <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 border border-primary/20">
+                  {arc.tag}
+                </div>
                 <p className="text-dark/60 text-sm leading-relaxed mb-6">{arc.description}</p>
               </div>
             ))}

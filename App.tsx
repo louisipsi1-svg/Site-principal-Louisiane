@@ -54,7 +54,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
             <div
-              className="flex items-center cursor-pointer group"
+              className="flex items-center cursor-pointer group shrink-0"
               onClick={() => navigateTo('home')}
             >
               <div className="relative">
@@ -66,18 +66,18 @@ const App: React.FC = () => {
                   }} />
                 </div>
               </div>
-              <div className="ml-3 hidden lg:block">
-                <span className="text-lg lg:text-xl font-serif font-bold text-dark tracking-tight block leading-none">Louisiane Aurora Psicologia & RH</span>
+              <div className="ml-3 hidden lg:block whitespace-nowrap shrink-0">
+                <span className="text-lg lg:text-lg font-serif font-bold text-dark tracking-tight block leading-none">Louisiane Aurora Psicologia & RH</span>
               </div>
             </div>
 
             {/* Desktop Nav */}
-            <div className="hidden md:flex items-center flex-1 justify-start ml-6 lg:ml-12 space-x-4 lg:space-x-6">
+            <div className="hidden md:flex items-center flex-1 justify-center ml-2 lg:ml-6 space-x-3 lg:space-x-4">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => navigateTo(item.id as Page)}
-                  className={`text-[13px] font-medium transition-all hover:text-primary whitespace-nowrap ${currentPage === item.id ? 'text-primary' : 'text-dark/60'
+                  className={`text-[15px] transition-all whitespace-nowrap cursor-pointer hover:text-primary hover:drop-shadow-md hover:-translate-y-0.5 hover:underline decoration-2 underline-offset-8 ${currentPage === item.id ? 'text-primary font-bold' : 'text-dark/80 font-bold'
                     }`}
                 >
                   {item.label}
@@ -90,7 +90,7 @@ const App: React.FC = () => {
                 href="https://wa.me/35910016852"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-dark text-white px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-dark/90 transition-all shadow-xl shadow-dark/10 flex items-center gap-2 group whitespace-nowrap"
+                className="bg-dark text-white px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-dark/90 transition-all shadow-xl shadow-dark/10 flex items-center gap-2 group whitespace-nowrap"
               >
                 Contato <MessageCircle size={16} className="group-hover:rotate-12 transition-transform" />
               </a>
@@ -144,6 +144,39 @@ const App: React.FC = () => {
         </div>
       </main>
 
+      {/* Social Links Bar */}
+      <div className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif text-dark mb-8">Conheça minhas redes sociais</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="https://www.instagram.com/louisi.aurora/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full border border-dark/10 flex items-center gap-3 text-dark hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm group" title="Instagram Clínica">
+              <Instagram size={20} className="group-hover:scale-110 transition-transform" />
+              <span className="font-medium text-sm">Instagram Clínica</span>
+            </a>
+            <a href="https://www.instagram.com/louisiaurora.psinr1/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full border border-dark/10 flex items-center gap-3 text-dark hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm group" title="Instagram Corporativo">
+              <Instagram size={20} className="group-hover:scale-110 transition-transform" />
+              <span className="font-medium text-sm">Instagram Corporativo</span>
+            </a>
+            <a href="https://www.linkedin.com/in/louisiane-aurora-0a6514b6/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full border border-dark/10 flex items-center gap-3 text-dark hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm group" title="LinkedIn">
+              <Linkedin size={20} className="group-hover:scale-110 transition-transform" />
+              <span className="font-medium text-sm">LinkedIn</span>
+            </a>
+            <a href="https://www.tiktok.com/@louisi.aurora?_r=1&_t=ZS-93ol6fHLMMK" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full border border-dark/10 flex items-center gap-3 text-dark hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm group" title="TikTok">
+              <Music size={20} className="group-hover:scale-110 transition-transform" />
+              <span className="font-medium text-sm">TikTok</span>
+            </a>
+            <a href="https://wa.me/35910016852" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full border border-dark/10 flex items-center gap-3 text-dark hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm group" title="WhatsApp">
+              <MessageCircle size={20} className="group-hover:scale-110 transition-transform" />
+              <span className="font-medium text-sm">WhatsApp</span>
+            </a>
+            <a href="mailto:contato@aurorapsc.com.br" className="px-6 py-3 rounded-full border border-dark/10 flex items-center gap-3 text-dark hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm group" title="E-mail">
+              <Mail size={20} className="group-hover:scale-110 transition-transform" />
+              <span className="font-medium text-sm">E-mail</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Footer */}
       <footer className="bg-dark text-secondary py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -157,31 +190,9 @@ const App: React.FC = () => {
                   <h3 className="text-2xl font-serif font-bold text-white">Louisiane Aurora Psicologia & RH</h3>
                 </div>
               </div>
-              <p className="text-secondary/60 max-w-sm leading-relaxed mb-10 text-sm italic">
-                Transformando a complexidade das relações em fluxos de trabalho saudáveis. Apoio especializado para empresas e pessoas que buscam equilíbrio e resultados reais.
+              <p className="text-secondary/60 max-w-sm leading-relaxed mb-6 text-sm italic">
+                Transformando a complexidade das relações em fluxo de relações e trabalhos saudáveis. Apoio especializado para empresas e pessoas que buscam equilíbrio e resultados reais.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <a href="https://www.instagram.com/louisi.aurora/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex flex-col items-center justify-center hover:bg-primary hover:border-primary transition-all group" title="Instagram Clínica">
-                  <Instagram size={18} className="group-hover:scale-110 transition-transform" />
-                  <span className="text-[8px] mt-1 opacity-60">Clínica</span>
-                </a>
-                <a href="https://www.instagram.com/louisiaurora.psinr1/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex flex-col items-center justify-center hover:bg-primary hover:border-primary transition-all group" title="Instagram Corporativo">
-                  <Instagram size={18} className="group-hover:scale-110 transition-transform" />
-                  <span className="text-[8px] mt-1 opacity-60">Corp</span>
-                </a>
-                <a href="https://www.tiktok.com/@louisi.aurora?_r=1&_t=ZS-93ol6fHLMMK" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all group" title="TikTok">
-                  <Music size={20} className="group-hover:scale-110 transition-transform" />
-                </a>
-                <a href="https://www.linkedin.com/in/louisiane-aurora-0a6514b6/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all group" title="LinkedIn">
-                  <Linkedin size={20} className="group-hover:scale-110 transition-transform" />
-                </a>
-                <a href="https://wa.me/35910016852" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all group" title="WhatsApp">
-                  <MessageCircle size={20} className="group-hover:scale-110 transition-transform" />
-                </a>
-                <a href="mailto:contato@aurorapsc.com.br" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all group" title="E-mail">
-                  <Mail size={20} className="group-hover:scale-110 transition-transform" />
-                </a>
-              </div>
             </div>
 
             <div>
@@ -204,15 +215,18 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest font-bold text-secondary/30 text-center md:text-left">
-            <p>
-              © 2026. Louisiane Aurora Psicologia e RH. Todos os direitos reservados.<br />
-              CNPJ: 59.745.937/0001-39 • Poços de Caldas, MG<br />
-              Em conformidade com a LGPD e Código de Ética do Conselho Federal de Psicologia
-            </p>
-            <div className="flex gap-8">
-              <button onClick={() => navigateTo('termos')} className="hover:text-primary transition-colors uppercase">Termos de Uso</button>
-              <button onClick={() => navigateTo('privacidade')} className="hover:text-primary transition-colors uppercase">Privacidade</button>
+          <div className="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-secondary/70 text-center md:text-left">
+            <div className="space-y-1">
+              <p className="font-medium">
+                &copy; {new Date().getFullYear()} Louisiane Aurora Psicologia & RH. Todos os direitos reservados.
+              </p>
+              <p className="text-xs text-secondary/50">
+                CNPJ: 59.745.937/0001-39 &bull; Poços de Caldas, MG
+              </p>
+            </div>
+            <div className="flex gap-6 text-xs font-medium">
+              <button onClick={() => navigateTo('termos')} className="hover:text-white transition-colors">Termos de Uso</button>
+              <button onClick={() => navigateTo('privacidade')} className="hover:text-white transition-colors">Política de Privacidade</button>
             </div>
           </div>
         </div>
