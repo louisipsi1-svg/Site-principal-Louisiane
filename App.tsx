@@ -1,17 +1,14 @@
 
 import React, { useState } from 'react';
-import { Home, User, Briefcase, ShieldCheck, Menu, X, Instagram, Linkedin, MessageCircle, ArrowRight, Video, Info, Music, Mail } from 'lucide-react';
+import { Home, User, Briefcase, Menu, X, Instagram, Linkedin, MessageCircle, ArrowRight, Video, Info, Music, Mail } from 'lucide-react';
 import HomePage from './pages/Home';
 import ClinicaPage from './pages/Clinica';
 import RHPage from './pages/RH';
-import SaudeMentalPage from './pages/SaudeMental';
 import QuemSouPage from './pages/QuemSou';
-import CarreiraPage from './pages/Carreira';
-
 
 import LegalPage from './pages/Legal';
 
-type Page = 'home' | 'rh' | 'saudemental' | 'clinica' | 'quemsou' | 'carreira' | 'termos' | 'privacidade';
+type Page = 'home' | 'rh' | 'clinica' | 'quemsou' | 'termos' | 'privacidade';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -21,10 +18,8 @@ const App: React.FC = () => {
     switch (currentPage) {
       case 'home': return <HomePage />;
       case 'rh': return <RHPage />;
-      case 'saudemental': return <SaudeMentalPage />;
       case 'clinica': return <ClinicaPage />;
       case 'quemsou': return <QuemSouPage />;
-      case 'carreira': return <CarreiraPage />;
       case 'termos': return <LegalPage type="termos" onBack={() => setCurrentPage('home')} />;
       case 'privacidade': return <LegalPage type="privacidade" onBack={() => setCurrentPage('home')} />;
       default: return <HomePage />;
@@ -33,11 +28,9 @@ const App: React.FC = () => {
 
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
-    { id: 'quemsou', label: 'Quem sou', icon: User },
+    { id: 'quemsou', label: 'Sobre Mim', icon: User },
     { id: 'clinica', label: 'Psicologia Clínica', icon: Info },
-    { id: 'carreira', label: 'Carreira & Personalidade', icon: Briefcase },
-    { id: 'rh', label: 'RH & Consultoria', icon: Briefcase },
-    { id: 'saudemental', label: 'Saúde Mental - NR1', icon: ShieldCheck },
+    { id: 'rh', label: 'Psicologia Organizacional', icon: Briefcase },
   ];
 
 
@@ -191,7 +184,8 @@ const App: React.FC = () => {
                 </div>
               </div>
               <p className="text-secondary/60 max-w-sm leading-relaxed mb-6 text-sm italic">
-                Transformando a complexidade das relações em fluxo de relações e trabalhos saudáveis. Apoio especializado para empresas e pessoas que buscam equilíbrio e resultados reais.
+                Psicologia para relações mais saudáveis.<br />
+                Na vida e no trabalho.
               </p>
             </div>
 

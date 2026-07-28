@@ -11,8 +11,8 @@ const questions = [
     { id: 6, category: "Propósito", question: "O quanto você sente que suas ações diárias estão alinhadas aos seus valores?" },
     { id: 7, category: "Família", question: "Qual a qualidade do seu tempo e conexão com seus familiares?" },
     { id: 8, category: "Romance", question: "Como você avalia a profundidade e satisfação em sua vida afetiva?" },
-    { id: 9, category: "Social", question: "Como está a qualidade das suas amizades e sua vida em comunidade?" },
-    { id: 10, category: "Lazer", question: "O quanto você consegue se desconectar e desfrutar de momentos de lazer?" }
+    { id: 9, category: "Social & Lazer", question: "O quanto você desfruta de momentos de lazer, amizades e vida social?" },
+    { id: 10, category: "Espiritualidade", question: "Como você avalia sua conexão com sua espiritualidade, fé ou paz interior?" }
 ];
 
 const WheelOfLife: React.FC = () => {

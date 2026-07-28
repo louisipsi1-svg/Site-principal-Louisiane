@@ -1,32 +1,21 @@
 
 import React from 'react';
-import { CheckCircle2, Linkedin, Instagram } from 'lucide-react';
+import { Linkedin, Instagram } from 'lucide-react';
 
 const RHPage: React.FC = () => {
   const services = [
     {
-      title: "Cultura Organizacional",
-      desc: "Desenho e implementação de valores que saem da parede e guiam decisões."
+      title: "Saúde Mental no Trabalho",
+      desc: "Implementação de ações voltadas à promoção da saúde mental, gestão de riscos psicossociais e adequação às exigências da NR-1, contribuindo para ambientes de trabalho mais seguros, saudáveis e sustentáveis."
     },
     {
-      title: "RH Técnico & Processos",
-      desc: "Estruturação de subsistemas de RH com foco em eficiência e compliance."
+      title: "Desenvolvimento Humano",
+      desc: "Palestras, treinamentos e programas voltados ao desenvolvimento de lideranças, comunicação, gestão de conflitos, inteligência emocional, trabalho em equipe e fortalecimento da cultura organizacional."
     },
     {
-      title: "Psicologia Organizacional",
-      desc: "Aplicação de ciência comportamental para o amadurecimento de equipes."
-    },
-    {
-      title: <>Avaliação de Perfil <br /> (Big Five)</>,
-      desc: "Mapeamento assertivo de competências para contratação e promoção com metodologias validadas cientificamente"
+      title: "Pessoas e Cultura",
+      desc: "Consultorias em Recrutamento e Seleção, mapeamento comportamental, assessment, desenvolvimento de carreira, PDI, feedback e outras estratégias para potencializar o desempenho das pessoas e das organizações."
     }
-  ];
-
-  const pillars = [
-    "Eficiência Técnica",
-    "Cultura do Cuidado",
-    "Trabalhos que fluem",
-    "Segurança Psicológica"
   ];
 
   return (
@@ -36,20 +25,18 @@ const RHPage: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-16 items-center mb-24">
           <div className="md:w-1/2">
             <div className="inline-block px-3 py-1 rounded-full bg-dark/10 text-dark text-xs font-bold tracking-widest uppercase mb-4">
-              Consultoria Organizacional
+              Psicologia Organizacional
             </div>
-            <h1 className="text-4xl md:text-5xl font-serif text-dark mb-8 leading-tight">
-              Inteligência em Operações <br /> <span className="italic">e Gestão de Pessoas.</span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif text-dark mb-8 leading-tight">
+              Cuidar da saúde mental no trabalho é <span className="italic">cuidar das relações que sustentam uma organização.</span>
             </h1>
-            <p className="text-lg text-dark/70 mb-8 leading-relaxed">
-              Empresas não são máquinas, são sistemas humanos complexos. Minha consultoria entrega um olhar cuidadoso e técnico para negócios que buscam crescer com equilíbrio, organizando os processos de RH de forma clara e humana para que as pessoas e os resultados possam florescer juntos.
-            </p>
-            <div className="grid grid-cols-2 gap-4">
-              {pillars.map((pillar, index) => (
-                <div key={index} className="flex items-center text-dark/80 font-medium text-sm md:text-base">
-                  <CheckCircle2 className="text-primary mr-2 flex-shrink-0" size={18} /> {pillar}
-                </div>
-              ))}
+            <div className="text-lg text-dark/75 mb-8 leading-relaxed space-y-4">
+              <p>
+                Organizações saudáveis não são construídas apenas por processos eficientes, mas por pessoas que trabalham em ambientes onde há clareza, responsabilidade, comunicação e segurança psicológica.
+              </p>
+              <p>
+                Por isso, atuo ao lado de empresas desenvolvendo estratégias que fortalecem a saúde mental, o desenvolvimento humano e a gestão de pessoas, sempre com base na Psicologia Organizacional e nas necessidades específicas de cada contexto.
+              </p>
             </div>
           </div>
           <div className="md:w-1/2 relative">
@@ -62,11 +49,13 @@ const RHPage: React.FC = () => {
         </div>
 
         {/* Services Grid */}
-        <section className="grid md:grid-cols-4 gap-8 mb-24">
+        <section className="grid md:grid-cols-3 gap-8 mb-24">
           {services.map((service, i) => (
-            <div key={i} className="p-8 bg-secondary border-t-4 border-primary rounded-b-xl shadow-sm hover:shadow-md transition-shadow group">
-              <h3 className="text-lg font-serif text-dark mb-4 font-bold group-hover:text-primary transition-colors">{service.title}</h3>
-              <p className="text-dark/60 text-xs leading-relaxed">{service.desc}</p>
+            <div key={i} className="p-8 md:p-10 bg-secondary border-t-4 border-primary rounded-b-2xl shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+              <div>
+                <h3 className="text-xl font-serif text-dark mb-4 font-bold group-hover:text-primary transition-colors">{service.title}</h3>
+                <p className="text-dark/70 text-sm leading-relaxed">{service.desc}</p>
+              </div>
             </div>
           ))}
         </section>
@@ -76,7 +65,7 @@ const RHPage: React.FC = () => {
           <div className="max-w-2xl relative z-10">
             <h2 className="text-2xl md:text-3xl font-serif text-dark mb-4 italic">Sua empresa merece clareza em cada decisão.</h2>
             <p className="text-dark/70 text-sm md:text-base leading-relaxed">
-              Uso métodos validados e avaliações precisas para que a gestão de pessoas seja feita com segurança, transformando o que parece subjetivo em dados que ajudam você a decidir melhor.
+              Vamos construir ambientes de trabalho mais saudáveis, onde pessoas e organizações possam se desenvolver de forma sustentável.
             </p>
           </div>
           <a

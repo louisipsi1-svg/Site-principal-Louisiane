@@ -1,7 +1,6 @@
 
 import React from 'react';
-// Added ArrowRight to the imported components from lucide-react
-import { BookOpen, GraduationCap, Heart, Building2, CheckCircle2, Quote, ArrowRight } from 'lucide-react';
+import { Building2 } from 'lucide-react';
 
 const QuemSouPage: React.FC = () => {
   const logoIcons = [
@@ -17,9 +16,9 @@ const QuemSouPage: React.FC = () => {
     <div className="flex flex-col py-12 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Intro Section - The "Why" */}
-        <section className="flex flex-col md:flex-row items-center gap-12 md:gap-20 mb-32">
-          <div className="md:w-1/2 relative">
+        {/* Intro Section - Quem Sou */}
+        <section className="flex flex-col md:flex-row items-start gap-12 md:gap-16 mb-24">
+          <div className="md:w-5/12 relative">
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
             <img
               src="louisi1.jpg"
@@ -31,53 +30,36 @@ const QuemSouPage: React.FC = () => {
               }}
             />
           </div>
-          <div className="md:w-1/2">
-            <Quote className="text-primary/20 mb-6" size={48} />
-            <h1 className="text-3xl md:text-5xl font-serif text-dark mb-8 leading-tight italic">
-              Minha missão é caminhar ao seu lado.
-            </h1>
-            <p className="text-lg text-dark/70 leading-relaxed mb-6">
-              Minha trajetória na clínica e nas empresas me ensinou uma verdade fundamental: o ser humano é um sistema único e precisa ser respeitado como tal. Minha missão não é apenas aplicar processos, mas acolher cada história e cada estrutura organizacional com o cuidado que elas merecem.
-            </p>
-            <p className="text-lg text-dark/70 leading-relaxed italic border-l-4 border-primary/20 pl-6">
-              Acredito que resultados sustentáveis e saúde emocional não são opostos, mas faces da mesma moeda.
-            </p>
-          </div>
-        </section>
 
-        {/* Narrative Biography */}
-        <section className="bg-secondary/50 rounded-[3rem] p-8 md:p-20 mb-32">
-          <div className="max-w-3xl mx-auto">
-            <div className="flex items-center gap-3 mb-12">
-              <GraduationCap className="text-primary" size={28} />
-              <h2 className="text-2xl md:text-3xl font-serif text-dark">Trajetória Técnica</h2>
+          <div className="md:w-7/12 space-y-6">
+            <div className="border-l-4 border-primary pl-6 py-2 mb-8 bg-primary/5 rounded-r-2xl pr-4">
+              <h1 className="text-2xl md:text-3xl font-serif text-dark leading-tight italic">
+                "Acredito que relações saudáveis começam quando aprendemos a estabelecer e sustentar limites saudáveis."
+              </h1>
             </div>
 
-            <div className="space-y-8 text-dark/80 leading-relaxed">
-              <p>
-                Minha trajetória é marcada pela união entre o rigor clínico, visão estratégica, cuidado e humanidade. Como <strong>Psicóloga Clínica e Organizacional</strong>, especialista em <strong>Terapia Cognitiva Comportamental (TCC)</strong> e em <strong>Psicologia Organizacional e do Trabalho</strong> (reconhecida pelo CFP), <strong>MBA em Gestão de Pessoas e Recursos Humanos</strong>, com formação em <strong>Saúde Mental Corporativa</strong> atualizada à nova NR1 com chancela do MEC, dedico minha escuta ao resgate de mulheres exaustas, auxiliando-as na regulação emocional e no estabelecimento de limites saudáveis.
+            <p className="text-lg text-dark/80 leading-relaxed font-medium">
+              Foi essa convicção que me levou a construir minha atuação tanto na Psicologia Clínica quanto na Psicologia Organizacional.
+            </p>
+
+            <div className="p-6 bg-secondary/60 rounded-2xl border border-primary/10 space-y-4">
+              <p className="text-base text-dark/80 leading-relaxed">
+                <strong className="font-semibold text-dark block mb-1">Na clínica:</strong>
+                Acompanho mulheres emocionalmente exaustas que desejam compreender os padrões que dificultam seus limites e construir relações mais saudáveis, começando pela relação consigo mesmas.
               </p>
-              <p>
-                Ao longo dos anos, mergulhei também na realidade das empresas, acumulando experiência prática em <strong>RH, DP, Financeiro e SST</strong>. Esse repertório multidisciplinar me permite oferecer intervenções seguras, que compreendem não apenas as profundezas da mente humana, mas também as engrenagens e os desafios reais da gestão de um negócio.
+              <p className="text-base text-dark/80 leading-relaxed">
+                <strong className="font-semibold text-dark block mb-1">Nas organizações:</strong>
+                Ajudo empresas a promover saúde mental, fortalecer lideranças e desenvolver ambientes de trabalho psicologicamente saudáveis.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary/10 rounded-xl text-primary"><BookOpen size={20} /></div>
-                <div>
-                  <h4 className="font-bold text-dark text-sm uppercase tracking-wider mb-1">Ciência Aplicada</h4>
-                  <p className="text-xs text-dark/60 italic">Intervenções baseadas em evidências para garantir assertividade.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary/10 rounded-xl text-primary"><Heart size={20} /></div>
-                <div>
-                  <h4 className="font-bold text-dark text-sm uppercase tracking-wider mb-1">Acolhimento Técnico</h4>
-                  <p className="text-xs text-dark/60 italic">Uma escuta ativa que une sensibilidade e expertise clínica.</p>
-                </div>
-              </div>
-            </div>
+            <p className="text-base text-dark/80 leading-relaxed">
+              Sou psicóloga, especialista em Psicologia Organizacional e do Trabalho, com atuação nas áreas clínica e organizacional. Ao longo da minha trajetória, desenvolvi projetos voltados ao desenvolvimento humano, saúde mental, recrutamento e seleção, treinamento, liderança e gestão de pessoas, integrando conhecimento técnico e prática profissional para promover mudanças consistentes nas pessoas e nas organizações.
+            </p>
+
+            <p className="text-base text-dark/90 font-serif italic text-lg leading-relaxed pt-2">
+              Hoje, meu propósito é o mesmo em qualquer contexto: ajudar pessoas e organizações a construírem relações mais conscientes, responsáveis e saudáveis.
+            </p>
           </div>
         </section>
 
@@ -107,27 +89,7 @@ const QuemSouPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Closing Banner */}
-        <section className="bg-dark text-secondary rounded-[3.5rem] p-12 md:p-24 overflow-hidden relative text-center">
-          <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif italic mb-8">Além dos títulos, o propósito.</h2>
-            <p className="text-lg text-secondary/70 mb-12">
-              Por trás do CNPJ e dos registros profissionais, existe uma dedicação genuína à <span className="text-primary font-bold">Cultura do Cuidado</span>. Meu trabalho é garantir que processos fluam, que pessoas se sintam seguras e que organizações se tornem lugares de real prosperidade humana.
-            </p>
-            <a
-              href="https://wa.me/35910016852"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl shadow-primary/20 inline-flex items-center gap-3 mx-auto"
-            >
-              Vamos conversar sobre seu momento <ArrowRight size={18} />
-            </a>
-          </div>
 
-          {/* Abstract decoration */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -mr-32 -mt-32"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] -ml-48 -mb-48"></div>
-        </section>
 
       </div>
     </div>

@@ -1,25 +1,22 @@
 
 import React from 'react';
-import { Sparkles, Brain, Heart, Calendar, ArrowRight, BookOpen, Search, Instagram } from 'lucide-react';
+import { Sparkles, Brain, Heart, Calendar, ArrowRight, Instagram } from 'lucide-react';
 
 const ClinicaPage: React.FC = () => {
   const archetypes = [
     {
-      title: "A Boazinha",
-      tag: "Apego Ansioso",
-      description: "Dificuldade crônica em dizer \"não\", buscando segurança e afeto através da anulação de si mesma e do agradar constante.",
+      title: "A que agrada",
+      description: "Você sente dificuldade em decepcionar pessoas.\nMesmo quando está cansada, continua dizendo \"sim\" para evitar culpa, conflitos ou rejeição.",
       icon: <Heart className="text-primary" size={24} />
     },
     {
-      title: "A Perfeccionista",
-      tag: "Apego Evitante",
-      description: "A busca implacável por um padrão inalcançável, usando o alto desempenho e controle como escudo contra a vulnerabilidade.",
+      title: "A que controla",
+      description: "Você acredita que, se não assumir tudo, as coisas vão sair do controle.\nCarrega responsabilidades que muitas vezes não são suas.",
       icon: <Sparkles className="text-primary" size={24} />
     },
     {
-      title: "A Sem Limites",
-      tag: "Desregulação Emocional",
-      description: "A exaustão de quem não consegue estabelecer fronteiras, fundindo-se com as demandas do outro às custas de si.",
+      title: "A que se abandona",
+      description: "Você conhece seus limites.\nMas sente culpa sempre que tenta respeitá-los.\nEntão volta atrás.",
       icon: <Brain className="text-primary" size={24} />
     }
   ];
@@ -32,12 +29,17 @@ const ClinicaPage: React.FC = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold tracking-widest uppercase mb-6">
               <Brain size={12} /> Seja fiel a si mesma
             </div>
-            <h1 className="text-4xl md:text-6xl font-serif text-dark mb-8 leading-tight">
-              Para a mulher que se perdeu na tentativa de ser <span className="italic">tudo para todos.</span>
+            <h1 className="text-4xl md:text-5xl font-serif text-dark mb-8 leading-tight">
+              Psicoterapia para mulheres <span className="italic">emocionalmente exaustas.</span>
             </h1>
-            <p className="text-lg text-dark/70 mb-10 leading-relaxed max-w-xl">
-              Acolher o esgotamento de uma mulher requer um olhar que vai além do óbvio. Uno a <span className="text-dark font-bold underline decoration-primary/30">neurociência à escuta clínica</span> para oferecer um caminho de clareza em meio ao caos, entregando ferramentas que ajudam você a regular suas emoções e a recuperar a leveza de ser quem você é, sem o peso de ter que dar conta de tudo.
-            </p>
+            <div className="text-base md:text-lg text-dark/75 mb-10 leading-relaxed max-w-xl space-y-4">
+              <p>
+                Você não precisa aprender apenas a dizer "não". Precisa aprender a sustentar esse "não" quando surgem a culpa, o medo da rejeição e a vontade de voltar atrás.
+              </p>
+              <p>
+                Na terapia, investigamos os padrões que sustentam esse sofrimento e construímos novas formas de se relacionar consigo mesma e com os outros.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://wa.me/35910016852"
@@ -45,7 +47,7 @@ const ClinicaPage: React.FC = () => {
                 rel="noopener noreferrer"
                 className="bg-primary text-white px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:bg-primary/90 transition-all flex items-center justify-center shadow-2xl shadow-primary/30 group"
               >
-                Agendar Triagem Técnica <Calendar className="ml-3 group-hover:rotate-12 transition-transform" size={18} />
+                Agendar Sessão <Calendar className="ml-3 group-hover:rotate-12 transition-transform" size={18} />
               </a>
               <a
                 href="https://www.instagram.com/louisi.aurora/"
@@ -85,83 +87,40 @@ const ClinicaPage: React.FC = () => {
 
         {/* Archetypes Section */}
         <section className="mb-32">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-3xl md:text-4xl font-serif text-dark mb-6">A Raiz do Esgotamento</h2>
-            <p className="text-dark/70 text-lg leading-relaxed mb-6">
-              Segundo a <span className="font-bold text-primary">Teoria do Apego</span>, os padrões que drenam sua energia frequentemente nascem de estratégias de sobrevivência emocional. O primeiro passo da estratégia clínica é identificar sob qual arquétipo você está operando.
-            </p>
-            <p className="text-dark/60 italic text-sm leading-relaxed">
-              O objetivo terapêutico não é rotular você, mas sim construir ferramentas de <span className="font-bold">Regulação Emocional</span> para que você possa migrar desses padrões defensivos para o cultivo de <span className="font-bold text-primary">Vínculos Saudáveis</span>, onde se pode pertencer a uma relação sem deixar de pertencer a si mesma.
-            </p>
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 className="text-3xl md:text-5xl font-serif text-dark mb-2">A Raiz do Esgotamento</h2>
+            <h3 className="text-xl md:text-2xl font-serif text-primary italic font-medium">
+              Por que é tão difícil estabelecer limites?
+            </h3>
+            
+            <div className="text-dark/75 text-base md:text-lg leading-relaxed space-y-4 pt-4 text-left md:text-center">
+              <p>Muitas mulheres acreditam que estão exaustas porque fazem demais.</p>
+              <p>Mas, na prática clínica, percebo que o problema costuma ser mais profundo.</p>
+              <p>
+                A dificuldade de estabelecer e sustentar limites faz com que muitas mulheres assumam responsabilidades excessivas, evitem conflitos, priorizem constantemente as necessidades dos outros e, aos poucos, se afastem de si mesmas.
+              </p>
+              <p className="font-medium text-dark/90 italic pt-2">
+                Na terapia, nosso objetivo não é ensinar você apenas a dizer "não". É compreender os padrões que tornam esse "não" tão difícil de sustentar e construir relações mais saudáveis sem que você precise abandonar quem é.
+              </p>
+            </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-10">
+
+          <div className="grid md:grid-cols-3 gap-8">
             {archetypes.map((arc, i) => (
-              <div key={i} className="group bg-white p-12 rounded-[2.5rem] border border-primary/5 hover:border-primary/20 transition-all duration-500 hover:-translate-y-2 shadow-sm hover:shadow-xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
-                  {arc.icon}
+              <div key={i} className="group bg-white p-8 md:p-10 rounded-[2.5rem] border border-primary/10 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 shadow-sm hover:shadow-xl relative overflow-hidden flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-secondary/50 mb-6 group-hover:bg-primary/10 transition-colors">
+                    {arc.icon}
+                  </div>
+                  <h4 className="text-2xl font-serif text-dark mb-4">{arc.title}</h4>
+                  <p className="text-dark/70 text-base leading-relaxed whitespace-pre-line">{arc.description}</p>
                 </div>
-                <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-secondary/50 mb-8 group-hover:bg-primary/10 transition-colors">
-                  {arc.icon}
-                </div>
-                <h3 className="text-2xl font-serif text-dark mb-2">{arc.title}</h3>
-                <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 border border-primary/20">
-                  {arc.tag}
-                </div>
-                <p className="text-dark/60 text-sm leading-relaxed mb-6">{arc.description}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Methodology */}
-        <div className="bg-dark text-secondary p-12 md:p-24 rounded-[3.5rem] overflow-hidden relative shadow-3xl">
-          <div className="relative z-10 grid md:grid-cols-2 gap-20 items-center">
-            <div>
-              <div className="w-12 h-1 bg-primary mb-8"></div>
-              <h2 className="text-4xl font-serif mb-8 italic leading-tight">Embasamento que gera <br /> <span className="text-primary not-italic">cuidado real.</span></h2>
-              <div className="space-y-8">
-                <div className="flex items-start group">
-                  <div className="bg-primary/20 p-3 rounded-2xl mr-5 mt-1 transition-transform group-hover:scale-110"><Brain size={24} className="text-primary" /></div>
-                  <div>
-                    <h4 className="font-bold text-sm uppercase tracking-widest mb-2 text-primary">Neurociência Aplicada</h4>
-                    <p className="text-secondary/70 text-sm leading-relaxed">Entender como seu cérebro reage ao estresse é o primeiro passo para o alívio. Uso a neurociência para ajudar você a acalmar o excesso de cobranças e recuperar a clareza necessária para tomar decisões com mais leveza.</p>
-                  </div>
-                </div>
-                <div className="flex items-start group">
-                  <div className="bg-primary/20 p-3 rounded-2xl mr-5 mt-1 transition-transform group-hover:scale-110"><BookOpen size={24} className="text-primary" /></div>
-                  <div>
-                    <h4 className="font-bold text-sm uppercase tracking-widest mb-2 text-primary">Terapia Cognitivo-Comportamental (TCC)</h4>
-                    <p className="text-secondary/70 text-sm leading-relaxed">A base científica para identificar padrões que te paralisam. Trabalho na reorganização de pensamentos e comportamentos, substituindo a exaustão por atitudes que respeitam seus limites e sua história.</p>
-                  </div>
-                </div>
-                <div className="flex items-start group">
-                  <div className="bg-primary/20 p-3 rounded-2xl mr-5 mt-1 transition-transform group-hover:scale-110"><Search size={24} className="text-primary" /></div>
-                  <div>
-                    <h4 className="font-bold text-sm uppercase tracking-widest mb-2 text-primary">Mapeamento de Personalidade</h4>
-                    <p className="text-secondary/70 text-sm leading-relaxed">Utilizo ferramentas psicométricas de padrão ouro para compreender suas tendências naturais e forças individuais. O objetivo não é te rotular, mas construir estratégias de enfrentamento que realmente funcionem para o seu jeito de ser.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="text-center md:text-right flex flex-col items-center md:items-end">
-              <div className="text-7xl md:text-9xl font-serif mb-8 opacity-5 select-none font-bold">PSI</div>
-              <p className="text-secondary/80 italic text-xl leading-relaxed max-w-sm mb-10">
-                "Mais do que entender o que se sente, é preciso saber como cuidar do que se sente. Aqui, sua história é respeitada e transformada em ações gentis que fortalecem sua saúde mental e seu bem-estar."
-              </p>
-              <a
-                href="https://wa.me/35910016852"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-secondary text-dark px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-[10px] hover:bg-primary hover:text-white transition-all shadow-xl inline-block"
-              >
-                Começar Jornada
-              </a>
-            </div>
-          </div>
-          {/* Decorative element */}
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-[150px] -ml-48 -mb-48"></div>
-          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[100px] -mr-32 -mt-32"></div>
-        </div>
+
       </div>
     </div>
   );
