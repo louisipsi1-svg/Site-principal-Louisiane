@@ -81,7 +81,7 @@ const ClinicaPage: React.FC = () => {
                 Na psicoterapia, trabalhamos os padrões que atravessam a forma como você se relaciona, consigo e com os outros, para desenvolver relações mais maduras, conscientes e saudáveis.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex justify-center">
               <a
                 href="https://wa.me/35910016852?text=Olá,%20Louisiane!%20Gostaria%20de%20agendar%20minha%20primeira%20sessão."
                 target="_blank"
@@ -123,7 +123,7 @@ const ClinicaPage: React.FC = () => {
         </div>
 
         {/* Section: Amar não significa saber se relacionar */}
-        <section className="mb-32">
+        <section className="mb-20">
           <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl md:text-5xl font-serif text-dark mb-2">
               Amar não significa saber se relacionar.
@@ -167,7 +167,7 @@ const ClinicaPage: React.FC = () => {
           </div>
 
           {/* Highlight Quote */}
-          <div className="mt-16 text-center max-w-3xl mx-auto p-8 bg-secondary/40 rounded-3xl border border-primary/10">
+          <div className="mt-20 text-center max-w-3xl mx-auto p-8 bg-secondary/40 rounded-3xl border border-primary/10">
             <p className="text-lg md:text-xl font-serif italic text-primary leading-relaxed">
               "Relacionar-se melhor não começa aprendendo a controlar o outro. Começa compreendendo aquilo que você faz dentro da relação."
             </p>
