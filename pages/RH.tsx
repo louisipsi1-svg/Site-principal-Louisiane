@@ -30,12 +30,12 @@ const RHPage: React.FC = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif text-dark mb-8 leading-tight">
               Cuidar da saúde mental no trabalho é <span className="italic">cuidar das relações que sustentam uma organização.</span>
             </h1>
-            <div className="text-lg text-dark/75 mb-8 leading-relaxed space-y-4">
+            <div className="text-lg text-dark/75 mb-8 leading-relaxed space-y-4 text-justify">
               <p>
                 Organizações saudáveis não são construídas apenas por processos eficientes, mas por pessoas que trabalham em ambientes onde há clareza, responsabilidade, comunicação e segurança psicológica.
               </p>
               <p>
-                Por isso, atuo ao lado de empresas desenvolvendo estratégias que fortalecem a saúde mental, o desenvolvimento humano e a gestão de pessoas, sempre com base na Psicologia Organizacional e nas necessidades específicas de cada contexto.
+                Por isso, atuo ao lado de empresas desenvolvendo estratégias que fortalecem a saúde mental, as relações de trabalho, o desenvolvimento humano e a gestão de pessoas, sempre com base na Psicologia Organizacional e nas necessidades específicas de cada contexto.
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ const RHPage: React.FC = () => {
             <div key={i} className="p-8 md:p-10 bg-secondary border-t-4 border-primary rounded-b-2xl shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-serif text-dark mb-4 font-bold group-hover:text-primary transition-colors">{service.title}</h3>
-                <p className="text-dark/70 text-sm leading-relaxed">{service.desc}</p>
+                <p className="text-dark/70 text-sm leading-relaxed text-justify">{service.desc}</p>
               </div>
             </div>
           ))}

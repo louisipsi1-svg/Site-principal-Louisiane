@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
             <div className="text-base md:text-lg text-dark/75 mb-8 max-w-lg leading-relaxed space-y-4">
               <div>
                 <strong className="font-semibold text-dark block">Na clínica</strong>
-                Ajudo mulheres emocionalmente exaustas a estabelecer e sustentar limites saudáveis.
+                Desenvolva competência para construir relações mais maduras, conscientes e saudáveis.
               </div>
               <div>
                 <strong className="font-semibold text-dark block">Nas empresas</strong>

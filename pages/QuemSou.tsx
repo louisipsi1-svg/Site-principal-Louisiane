@@ -34,22 +34,22 @@ const QuemSouPage: React.FC = () => {
           <div className="md:w-7/12 space-y-6">
             <div className="border-l-4 border-primary pl-6 py-2 mb-8 bg-primary/5 rounded-r-2xl pr-4">
               <h1 className="text-2xl md:text-3xl font-serif text-dark leading-tight italic">
-                "Acredito que relações saudáveis começam quando aprendemos a estabelecer e sustentar limites saudáveis."
+                "Acredito que relações saudáveis não dependem apenas de amor ou boas intenções. Elas também exigem competência para se relacionar."
               </h1>
             </div>
 
             <p className="text-lg text-dark/80 leading-relaxed font-medium">
-              Foi essa convicção que me levou a construir minha atuação tanto na Psicologia Clínica quanto na Psicologia Organizacional.
+              Foi essa compreensão que passou a orientar minha atuação: ajudar pessoas e organizações a construírem relações mais conscientes, responsáveis e saudáveis.
             </p>
 
             <div className="p-6 bg-secondary/60 rounded-2xl border border-primary/10 space-y-4">
               <p className="text-base text-dark/80 leading-relaxed">
                 <strong className="font-semibold text-dark block mb-1">Na clínica:</strong>
-                Acompanho mulheres emocionalmente exaustas que desejam compreender os padrões que dificultam seus limites e construir relações mais saudáveis, começando pela relação consigo mesmas.
+                Acompanho adultos que desejam compreender seus padrões relacionais e desenvolver recursos para comunicar, regular, vincular, diferenciar, reparar e discernir, consigo mesmos e em suas relações.
               </p>
               <p className="text-base text-dark/80 leading-relaxed">
                 <strong className="font-semibold text-dark block mb-1">Nas organizações:</strong>
-                Ajudo empresas a promover saúde mental, fortalecer lideranças e desenvolver ambientes de trabalho psicologicamente saudáveis.
+                Ajudo empresas a promover saúde mental, fortalecer lideranças e desenvolver relações de trabalho mais saudáveis por meio da Psicologia Organizacional e do Trabalho.
               </p>
             </div>
 

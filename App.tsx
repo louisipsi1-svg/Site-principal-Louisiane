@@ -60,7 +60,7 @@ const App: React.FC = () => {
                 </div>
               </div>
               <div className="ml-3 hidden lg:block whitespace-nowrap shrink-0">
-                <span className="text-lg lg:text-lg font-serif font-bold text-dark tracking-tight block leading-none">Louisiane Aurora Psicologia & RH</span>
+                <span className="text-lg lg:text-lg font-serif font-bold text-dark tracking-tight block leading-none">Louisiane Aurora Psicologia</span>
               </div>
             </div>
 
@@ -180,7 +180,7 @@ const App: React.FC = () => {
                   <img src="logo-principal-branco.png" alt="Logo Louisiane Aurora" className="w-full h-full object-contain" />
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-2xl font-serif font-bold text-white">Louisiane Aurora Psicologia & RH</h3>
+                  <h3 className="text-2xl font-serif font-bold text-white">Louisiane Aurora Psicologia</h3>
                 </div>
               </div>
               <p className="text-secondary/60 max-w-sm leading-relaxed mb-6 text-sm italic">
@@ -212,7 +212,7 @@ const App: React.FC = () => {
           <div className="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-secondary/70 text-center md:text-left">
             <div className="space-y-1">
               <p className="font-medium">
-                &copy; {new Date().getFullYear()} Louisiane Aurora Psicologia & RH. Todos os direitos reservados.
+                &copy; {new Date().getFullYear()} Louisiane Aurora Psicologia. Todos os direitos reservados.
               </p>
               <p className="text-xs text-secondary/50">
                 CNPJ: 59.745.937/0001-39 &bull; Poços de Caldas, MG
