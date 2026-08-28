@@ -82,7 +82,7 @@ const QuemSouPage: React.FC = () => {
                 <img
                   src={logo}
                   alt={`Logo Parceiro ${i + 1}`}
-                  className="max-w-full max-h-full object-contain"
+                  className="max-w-full max-h-full object-contain mix-blend-multiply"
                 />
               </div>
             ))}
