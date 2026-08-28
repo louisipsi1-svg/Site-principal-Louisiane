@@ -88,15 +88,11 @@ const ClinicaPage: React.FC = () => {
                 rel="noopener noreferrer"
                 className="bg-primary text-white px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:bg-primary/90 transition-all flex items-center justify-center shadow-2xl shadow-primary/30 group text-center"
               >
-                AGENDAR MINHA PRIMEIRA SESSÃO <Calendar className="ml-3 group-hover:rotate-12 transition-transform" size={18} />
-              </a>
-              <a
-                href="https://www.instagram.com/louisi.aurora/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-primary border border-primary/10 px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:border-primary/30 hover:bg-primary/5 transition-all flex items-center justify-center shadow-lg group text-center"
-              >
-                Instagram da Clínica <Instagram className="ml-3 group-hover:scale-110 transition-transform" size={18} />
+                <span>
+                  AGENDAR MINHA<br />
+                  PRIMEIRA SESSÃO
+                </span>
+                <Calendar className="ml-3 group-hover:rotate-12 transition-transform" size={18} />
               </a>
             </div>
           </div>
@@ -207,7 +203,11 @@ const ClinicaPage: React.FC = () => {
                   rel="noopener noreferrer"
                   className="bg-primary text-white px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:bg-primary/90 transition-all flex items-center justify-center shadow-2xl shadow-primary/30 group text-center"
                 >
-                  AGENDAR MINHA PRIMEIRA SESSÃO <Calendar className="ml-3 group-hover:rotate-12 transition-transform" size={18} />
+                  <span>
+                    AGENDAR MINHA<br />
+                    PRIMEIRA SESSÃO
+                  </span>
+                  <Calendar className="ml-3 group-hover:rotate-12 transition-transform" size={18} />
                 </a>
               </div>
             </div>
