@@ -53,7 +53,7 @@ const QuemSouPage: React.FC = () => {
               </p>
             </div>
 
-            <p className="text-base text-dark/80 leading-relaxed">
+            <p className="text-base text-dark/80 leading-relaxed text-justify">
               Sou psicóloga, especialista em Psicologia Organizacional e do Trabalho, com atuação nas áreas clínica e organizacional. Ao longo da minha trajetória, desenvolvi projetos voltados ao desenvolvimento humano, saúde mental, recrutamento e seleção, treinamento, liderança e gestão de pessoas, integrando conhecimento técnico e prática profissional para promover mudanças consistentes nas pessoas e nas organizações.
             </p>
 

@@ -60,7 +60,7 @@ const ClinicaPage: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col py-12 md:py-24">
+    <div className="flex flex-col pt-12 md:pt-24 pb-6 md:pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Hero Section */}
@@ -175,7 +175,7 @@ const ClinicaPage: React.FC = () => {
         </section>
 
         {/* Section: Talvez faça sentido iniciar psicoterapia se... */}
-        <section className="mb-24 bg-gradient-to-b from-secondary/20 to-secondary/50 p-8 md:p-16 rounded-[3rem] border border-primary/10">
+        <section className="mb-6 bg-gradient-to-b from-secondary/20 to-secondary/50 p-8 md:p-16 rounded-[3rem] border border-primary/10">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-4xl font-serif text-dark mb-10 text-center">
               Talvez faça sentido iniciar psicoterapia se...
