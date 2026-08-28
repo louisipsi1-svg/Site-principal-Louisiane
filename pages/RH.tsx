@@ -58,7 +58,7 @@ const RHPage: React.FC = () => {
             <div key={i} className="p-8 md:p-10 bg-secondary border-t-4 border-primary rounded-b-2xl shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-serif text-dark mb-4 font-bold group-hover:text-primary transition-colors">{service.title}</h3>
-                <p className="text-dark/70 text-sm leading-relaxed text-justify">{service.desc}</p>
+                <p className="text-dark/70 text-sm leading-relaxed">{service.desc}</p>
               </div>
             </div>
           ))}
