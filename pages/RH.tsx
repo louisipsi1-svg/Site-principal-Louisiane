@@ -15,6 +15,10 @@ const RHPage: React.FC = () => {
     {
       title: "Pessoas e Cultura",
       desc: "Consultorias em Recrutamento e Seleção, mapeamento comportamental, assessment, desenvolvimento de carreira, PDI, feedback e outras estratégias para potencializar o desempenho das pessoas e das organizações."
+    },
+    {
+      title: "Orientação Profissional e de Carreira",
+      desc: "Acompanhamento estruturado voltado para a primeira escolha profissional, momentos de transição de carreira e planejamento ou preparação para a aposentadoria, promovendo escolhas conscientes e alinhadas ao seu momento de vida."
     }
   ];
 
@@ -49,7 +53,7 @@ const RHPage: React.FC = () => {
         </div>
 
         {/* Services Grid */}
-        <section className="grid md:grid-cols-3 gap-8 mb-24">
+        <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
           {services.map((service, i) => (
             <div key={i} className="p-8 md:p-10 bg-secondary border-t-4 border-primary rounded-b-2xl shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
               <div>
