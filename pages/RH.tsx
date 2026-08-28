@@ -53,7 +53,7 @@ const RHPage: React.FC = () => {
         </div>
 
         {/* Services Grid */}
-        <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
+        <section className="grid md:grid-cols-2 gap-8 mb-24">
           {services.map((service, i) => (
             <div key={i} className="p-8 md:p-10 bg-secondary border-t-4 border-primary rounded-b-2xl shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
               <div>
